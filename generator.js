@@ -1,6 +1,6 @@
 module.exports = (api, options, rootOptions) => {
     api.extendPackage({
-        // 命令
+        // package
         scripts: {
             "serve": "vue-cli-service serve",
             "build": "vue-cli-service build",
