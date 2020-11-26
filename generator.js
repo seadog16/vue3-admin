@@ -1,0 +1,52 @@
+module.exports = (api, options, rootOptions) => {
+    api.extendPackage({
+        // 命令
+        scripts: {
+            "serve": "vue-cli-service serve",
+            "build": "vue-cli-service build",
+            "test:unit": "vue-cli-service test:unit",
+            "test:e2e": "vue-cli-service test:e2e",
+            "lint": "vue-cli-service lint"
+        },
+        dependencies: {
+            "core-js": "^3.6.5",
+            "lodash": "^4.17.20",
+            "vue": "^3.0.0",
+            "vue-router": "^4.0.0-0",
+            "vuex": "^4.0.0-0"
+        },
+        devDependencies: {
+            "@types/chai": "^4.2.11",
+            "@types/mocha": "^5.2.4",
+            "@typescript-eslint/eslint-plugin": "^2.33.0",
+            "@typescript-eslint/parser": "^2.33.0",
+            "@vue/cli-plugin-babel": "~4.5.0",
+            "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+            "@vue/cli-plugin-eslint": "~4.5.0",
+            "@vue/cli-plugin-router": "~4.5.0",
+            "@vue/cli-plugin-typescript": "~4.5.0",
+            "@vue/cli-plugin-unit-mocha": "~4.5.0",
+            "@vue/cli-plugin-vuex": "~4.5.0",
+            "@vue/cli-service": "~4.5.0",
+            "@vue/compiler-sfc": "^3.0.0",
+            "@vue/eslint-config-prettier": "^6.0.0",
+            "@vue/eslint-config-typescript": "^5.0.2",
+            "@vue/test-utils": "^2.0.0-0",
+            "babel-plugin-component": "^1.1.1",
+            "babel-plugin-lodash": "^3.3.4",
+            "chai": "^4.1.2",
+            "compression-webpack-plugin": "^6.1.1",
+            "eslint": "^6.7.2",
+            "eslint-plugin-prettier": "^3.1.3",
+            "eslint-plugin-vue": "^7.0.0-0",
+            "prettier": "^1.19.1",
+            "style-resources-loader": "^1.3.2",
+            "stylus": "^0.54.7",
+            "stylus-loader": "^3.0.2",
+            "typescript": "~3.9.3",
+            "vue-cli-plugin-style-resources-loader": "~0.1.4"
+        }
+    });
+    // 复制template模版
+    api.render('../template');
+};
