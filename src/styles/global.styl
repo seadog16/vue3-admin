@@ -1,0 +1,27 @@
+@import "./var.styl"
+
+body
+    font-family "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+    margin 0
+
+body, html, #app
+    height 100%
+
+a
+    color $--color-primary
+    cursor pointer
+
+.clearfix
+    &:before
+    &:after
+        content ""
+        display table
+
+    &:after
+        clear both
+
+for i in 1...5
+    h{i}
+        margin 0
