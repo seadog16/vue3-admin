@@ -15,10 +15,10 @@ export default defineComponent({
     },
     setup(props, ctx) {
         const { options } = props.option;
-        let ctl = <ElInput model-value={props.modelValue} on-change={e => ctx.emit("update:modelValue", e)}/>
+        let ctl = () => <ElInput model-value={props.modelValue} on-change={e => ctx.emit("update:modelValue", e)}/>
         console.log(ctx);
         if (options) {
-            ctl =
+            ctl = () =>
                 <ElSelect model-value={props.modelValue} on-change={e => ctx.emit("update:modelValue", e)}>
                     {options.map(v => <ElOption label={v.label} value={v.value}/>)}
                 </ElSelect>

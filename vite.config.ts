@@ -17,4 +17,8 @@ export default defineConfig({
     //         }
     //     }
     // }
+    esbuild: {
+        jsxFactory: "h",
+        jsxFragment: "Fragment"
+    }
 });
