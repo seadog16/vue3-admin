@@ -63,8 +63,8 @@ export default defineComponent({
                     page-size={pagiPage.size}
                     page-sizes={pagiPage.sizes}
                     current-page={pagiPage.page}
-                    onCurrent-change={e => emit("page-change", e)}
-                    onSize-change={e => emit("size-change", e)}/> : null}
+                    onCurrentChange={e => emit("page-change", e)}
+                    onSizeChange={e => emit("size-change", e)}/> : null}
             </div>
 
     }
