@@ -6,7 +6,6 @@
 [Vue Router4](https://next.router.vuejs.org/) ,
 [Vuex4](https://next.vuex.vuejs.org/) ,
 [Vite](https://cn.vitejs.dev/) ,
-[Typescript](https://www.typescriptlang.org/zh/) ,
 [Element Plus](https://element-plus.org/)
 
 ## 运行环境

@@ -1,33 +1,29 @@
 {
-    "version": "0.0.0",
+    "name": "vue3-admin1",
+    "version": "0.0.1",
     "scripts": {
         "dev": "vite",
-        "build": "vue-tsc --noEmit && vite build",
+        "build": "vite build",
         "serve": "vite preview"
     },
     "dependencies": {
-        "element-plus": "^1.1.0-beta.20",
+        "element-plus": "^1.1.0-beta.24",
         "vue": "^3.2.20",
-        "vue-router": "^4.0.11",
+        "vue-router": "^4.0.12",
         "vuex": "^4.0.2"
     },
     "devDependencies": {
-        "@types/node": "^16.10.5",
-        "@typescript-eslint/eslint-plugin": "^5.0.0",
-        "@typescript-eslint/parser": "^5.0.0",
         "@vitejs/plugin-vue": "^1.9.3",
-        "@vue/compiler-sfc": "^3.2.20",
-        "eslint": "^8.0.0",
+        "@vitejs/plugin-vue-jsx": "^1.2.0",
+        "eslint": "^8.1.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-vue": "^7.19.1",
+        "eslint-plugin-vue": "^7.20.0",
         "less": "^4.1.2",
         "prettier": "^2.4.1",
         "pug": "^3.0.2",
-        "sass": "^1.42.1",
+        "sass": "^1.43.3",
         "stylus": "^0.55.0",
-        "typescript": "^4.4.4",
-        "vite": "^2.6.7",
-        "vue-tsc": "^0.28.3"
+        "vite": "^2.6.12"
     }
 }

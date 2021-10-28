@@ -6,7 +6,7 @@ el-form(inline :model="searchData")
         v-model="searchData[opt.prop]")
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import ByFormItem from "@/components/ByFormItem/index.vue";
 

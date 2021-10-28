@@ -11,7 +11,7 @@
             span {{row}}
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -87,7 +87,7 @@ export default defineComponent({
     computed: {
         searchTable() {
             const filterProp = ["name", "gender"]
-            return (this as any).tableColumn.filter(v => filterProp.includes(v.prop))
+            return this.tableColumn.filter(v => filterProp.includes(v.prop))
         }
     },
     methods: {

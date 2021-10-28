@@ -3,7 +3,7 @@ import App from "@/App.vue";
 import ElementPlus from "element-plus";
 import "element-plus/packages/theme-chalk/src/index.scss";
 import "@/styles/global.styl";
-import router from "./router/index";
+import router from "./router";
 import store from './store';
 import ByTable from "@/components/ByTable/index.vue";
 import ByTableSearch from "@/components/ByTableSearch/index.vue";

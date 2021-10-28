@@ -1,4 +1,4 @@
-<script lang="tsx">
+<script lang="jsx">
 import { h, defineComponent, ref } from "vue";
 import { ElFormItem, ElInput, ElSelect, ElOption } from "element-plus";
 
@@ -25,7 +25,7 @@ export default defineComponent({
         }
         return () =>
             <ElFormItem label={props.option.label}>
-                {ctl}
+                {{ ctl }}
             </ElFormItem>
     }
 });

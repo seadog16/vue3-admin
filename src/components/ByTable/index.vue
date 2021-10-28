@@ -1,4 +1,4 @@
-<script lang="tsx">
+<script lang="jsx">
 import { h, defineComponent } from "vue";
 import { ElTable, ElTableColumn, ElPagination } from "element-plus";
 import TableColumnTag from "./TableColumnTag.vue";
@@ -28,14 +28,14 @@ export default defineComponent({
             size: 20,
             ...props.page
         }
-        return () =>
+        return () => (
             <div class="tableComponent">
                 <ElTable class="table" data={props?.data} {...optTable}>
-                    {() => props?.column?.map((v: any) => {
+                    {() => props?.column?.map(v => {
                         const property = (v.property && v.property.table) || {}
                         const slot = v.slot && v.slot.table
                         const options = v.options;
-                        let slotTemp: any = null;
+                        let slotTemp = null;
                         if (slot) {
                             slotTemp = slots[slot];
                         } else {
@@ -66,7 +66,7 @@ export default defineComponent({
                     onCurrentChange={e => emit("page-change", e)}
                     onSizeChange={e => emit("size-change", e)}/> : null}
             </div>
-
+        )
     }
 });
 </script>
